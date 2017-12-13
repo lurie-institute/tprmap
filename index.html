@@ -3,16 +3,17 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>US State Legislation Supporting Parents with Disabilities</title>
-        <link rel="stylesheet" href="https://3quartersofdream.github.io/dismap/ammap.css" type="text/css">
-        <script src="https://3quartersofdream.github.io/dismap/ammap.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://lurie-institute.github.io/dismap/ammap.css" type="text/css">
+        <script src="https://lurie-institute.github.io/dismap/ammap.js" type="text/javascript"></script>
     
         <!-- map file should be included after ammap.js -->
-		<script src="https://3quartersofdream.github.io/dismap/maps/js/usaLow.js" type="text/javascript"></script>
-        <script src="https://3quartersofdream.github.io/dismap/light.js"></script>
+		<script src="https://lurie-institute.github.io/dismap/maps/js/usaLow.js" type="text/javascript"></script>
+        <script src="https://lurie-institute.github.io/dismap/light.js"></script>
         <script>
 			/*AmCharts.makeChart("mapdiv", {*/
             var map = AmCharts.makeChart("chartdiv", {
 type: "map",
+dragMap:"false",
 accessible: "true",
 getAreasFromMap: true,
 accessibleTitle: "US State Legislation Supporting Parents with Disabilities",
@@ -445,14 +446,14 @@ areas: [
 
   areasSettings: {
     autoZoom: false,
-    selectedColor: undefined,
+    
     rollOverOutlineColor:"#000",
     rollOverOutlineAlpha:"1",
     rollOverOutlineThickness:"2",
     outlineThickness: "1",
     outlineColor: "#000",
     outlineAlpha: "1",
-      },
+          },
                 
   /*the properties of the pop-out balloons*/
   balloon: {
